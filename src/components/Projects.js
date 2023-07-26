@@ -2,7 +2,7 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/phoneZone.png";
 import projImg2 from "../assets/img/countries.png";
-import projImg3 from "../assets/img/todo.png";
+import projImg3 from "../assets/img/inmolandia.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -10,6 +10,7 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
 
   const projects = [
+
     {
       title: "PhoneZone",
       description: "Ecommerce de Celulares realizado en equipo. FrontEnd: React-Redux-Javascript-Tailwind. Backend: Node-Express-PostgreSQL",
@@ -19,6 +20,18 @@ export const Projects = () => {
           type: "deploy",
           url: "https://front-phone-zone.vercel.app/",
           code: "https://github.com/jooseariias/Mobil-Store",
+        },
+      ],
+    },
+    {
+      title: "Inmolandia",
+      description: "Descubre el hogar ideal para ti, y publica tus inmuebles gratis!. Tecnologias:React.js-redux-Bootstrap-PostgreSql-express-node.js",
+      imgUrl: projImg3,
+      Links: [
+        {
+          type: "deploy",
+          url: "https://inmolandia.netlify.app/",
+          code: "https://github.com/Carliitta/inmobiliaria",
         },
       ],
     },
@@ -34,18 +47,7 @@ export const Projects = () => {
         },
       ],
     },
-    {
-      title: "Todo List",
-      description: "Con esta aplicación, los usuarios pueden crear y eliminar tareas de una lista organizada. Tecnologias:React-TypeScript-Tailwind",
-      imgUrl: projImg3,
-      Links: [
-        {
-          type: "deploy",
-          url: "https://lista-quehaceres-typescript.netlify.app/",
-          code: "https://github.com/Carliitta/taks-app-typeScript",
-        },
-      ],
-    },
+   
    
   ];
 

@@ -55,7 +55,8 @@ a:hover {
 
 img {
   width: 90%;
-  height: auto;
+  height: 200px;
+  object-fit: cover;
 }
 
 button {
@@ -83,7 +84,7 @@ p.danger {
 }
 /************ Navbar Css ************/
 nav.navbar {
-  padding: 18px 0;
+  padding: 28px 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -99,11 +100,11 @@ nav.navbar a.navbar-brand {
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: #fff !important;
+  color: #f8e327 !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
-  font-size: 18px;
-  opacity: 0.75;
+  font-size: 20px;
+  opacity: 0.85;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
@@ -229,12 +230,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
-
+@media (max-width: 767px) {
+ 
+ nav{
+  background-color: #121212de;
+ 
+ }
+  
+ }
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
-  background-image: url('./assets/img/p.png') ;
+  padding: 200px 0 100px 0;
+  background-image: url('./assets/img/fondito.png') ;
 
   background-position: top center;
   background-size: cover;
@@ -248,7 +256,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   display: inline-block;
 }
 .banner h1 {
@@ -258,13 +266,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
   margin-bottom: 20px;
   display: block;
+  color: rgba(247, 208, 35, 0.966);
+  -webkit-text-stroke: 0.8px rgb(228, 129, 37);
 }
 .banner p {
-  color: #B8B8B8;
-  font-size: 18px;
+  background: linear-gradient(90.21deg, rgba(99, 54, 170, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-weight: 700;
   letter-spacing: 0.8px;
+  padding: 8px 10px;
+  color: #FFFFFF;
+  font-size: 20px;
+
   line-height: 1.5em;
   width: 96%;
+
 }
 .banner a {
   color: #fff;
@@ -282,15 +298,66 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
+  position: relative;
  
 }
 .banner a:hover svg {
   margin-left: 25px;
- 
+ color: #f8e327;
 }
 
-.banner img {
+
+
+/* Estilo para la imagen original del banner */
+.original-img {
   animation: updown 3s linear infinite;
+  width: 300px;
+  margin-left: 40px;
+  margin-top: 10px;
+ 
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Estilo para la imagen de media luna */
+.media-luna-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: updown 3s linear infinite;
+  width: 300px;
+  margin-left: 40px;
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Mostrar la imagen de media luna al pasar el cursor sobre el contenedor */
+.animate__animated:hover .media-luna-img {
+  opacity: 1;
+}
+
+/* Ocultar la imagen original del banner cuando se pase el cursor sobre el contenedor */
+.animate__animated:hover .original-img {
+  opacity: 0;
+}
+@media (max-width: 767px) {
+ .banner{
+  padding: 150px 0 100px 0;
+ /*  background: linear-gradient(90.21deg, #3664aa -5.91%, #3f19eb 111.58%); */
+ }
+ .banner p{
+
+  font-size: 18px;
+  
+ }
+ .original-img, .media-luna-img{
+  display: none;
+ }
+ .banner h1{
+  font-size: 50px;
+ }
+ 
 }
 @keyframes updown {
     0% {
@@ -309,15 +376,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
-  padding: 0 0 50px 0;
+  padding: 50px 0 50px 0;
   position: relative;
+
 }
 .skill-bx {
-  background: #151515;
-  border-radius: 64px;
+background-color: #121212;
   text-align: center;
-  padding: 60px 50px;
-  margin-top: -60px;
+  border-radius: 20px;
+  padding: 60px 60px;
+  margin-top: 10px;
 }
 .skill h2 {
 	font-size: 45px;
@@ -334,17 +402,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 80%;
   margin: 0 auto;
   position: relative;
+ 
 }
 .skill-slider .item .react-icons {
   font-size: 80px;
   margin: 0 auto 15px auto;
 }
 .background-image-left {
-  top: 28%;
+  top: 38%;
   position: absolute;
   bottom: 0;
-  width: 40%;
+  width: 50%;
   z-index: -4;
+}
+@media (max-width: 767px) {
+  .skill p{
+   text-align: left;
+  }
 }
 
 /************ Projects Css ************/
@@ -472,14 +546,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
-
-/************ Projects Css ************/
+@media (max-width: 767px) {
+  .project p{
+   text-align: left;
+  }
+  .project h2{
+    text-align: left;
+  }
+}
+/************ contact Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #3664aa -5.91%, #3f19eb 111.58%);
   padding: 60px 0 200px 0;
 }
-.contact img {
-  width: 90%;
+ #contacto-img {
+  width: 350px;
+ height: 350px;
+ object-fit: cover;
 }
 .contact h2 {
 	font-size: 45px;
@@ -544,11 +627,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button:hover::before {
   width: 100%;
 }
-
+@media (max-width: 767px) {
+ 
+  #contacto-img {
+  width: 200px;
+  height: 200px;
+  margin-left: 20%;
+  }
+ 
+}
 /************ Footer Css ************/
 .footer {
   padding: 0 0 30px 0;
-  background-image: url('./assets/img/footer-bg.png');
+  background-color: #121212;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

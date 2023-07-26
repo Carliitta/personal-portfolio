@@ -19,16 +19,16 @@ export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
+      breakpoint: { max: 4000, min: 2500 },
       items: 5
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3
+      breakpoint: { max: 2000, min: 1024 },
+      items: 4
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2
+      items: 3
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -44,7 +44,7 @@ export const Skills = () => {
                     <div className="skill-bx wow zoomIn">
                         <h2>Tecnologias y Herramientas</h2>
                         <p>Eh trabajado con una variedad de tecnologías y herramientas que me han permitido desarrollar proyectos de manera efectiva. Algunas de las tecnologías y herramientas que manejo incluyen:</p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                        <Carousel  responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                <FaReact className="react-icons"/>
                                 <h5>React</h5>
@@ -95,7 +95,6 @@ export const Skills = () => {
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
   )
 }
