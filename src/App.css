@@ -270,8 +270,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   -webkit-text-stroke: 0.8px rgb(228, 129, 37);
 }
 .banner p {
-  background: linear-gradient(90.21deg, rgba(99, 54, 170, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: linear-gradient(90.21deg, rgba(99, 54, 170, 0.329) -5.91%, rgba(73, 47, 189, 0.315) 111.58%);
+border-radius: 20px;
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
