@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import cv from "../assets/doc/cv-Rodriguez-Carla-2023sf.pdf"
+import cv from "../assets/doc/cv-Rodriguez.pdf"
 import{FaLinkedin,FaGithub} from 'react-icons/fa';
 import {HiDocument} from 'react-icons/hi';
 

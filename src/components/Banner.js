@@ -6,7 +6,7 @@ import { ArrowRightCircle } from 'react-bootstrap-icons';
 import {BiDownload} from "react-icons/bi"
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import cv from "../assets/doc/cv-Rodriguez-Carla-2023sf.pdf"
+import cv from "../assets/doc/cv-Rodriguez.pdf"
 export const Banner = () => {
   const habilidadesRef = useRef(null);
 
