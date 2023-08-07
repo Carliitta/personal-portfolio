@@ -25,7 +25,8 @@ export const Contact = () => {
    
     if(!formDetails.nombre.length || !formDetails.correo.length || !formDetails.mensaje.length){
       swal({
-        text: "Debe rellenar los campos",
+        title:'Error',
+        text: "Debe rellenar todos los campos",
         icon: "error",
       })
     }else{
@@ -40,6 +41,7 @@ export const Contact = () => {
           setButtonText("Enviar"); // Restaurar el texto del botón a "Enviar"
         }, (error) => {
           swal({
+            title:'Error',
             text: "ocurrio un error inesperado",
             icon: "error",
           })

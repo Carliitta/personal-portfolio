@@ -104,7 +104,8 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 20px;
-  opacity: 0.85;
+  opacity: 0.95;
+  margin-bottom: 10px;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
@@ -135,7 +136,7 @@ span.navbar-text {
     width: 42px;
     height: 42px;
     position: absolute;
-    background-color: #73089460;
+    background-color: #dbbd1560;
     border-radius: 50%;
     transform: scale(0);
 	transition: 0.3s ease-in-out;
@@ -239,10 +240,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   
  }
 /************ Banner Css ************/
+.cv{
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 230px;
+}
 .banner {
   margin-top: 0;
   padding: 200px 0 100px 0;
-  background-image: url('./assets/img/fondito.png') ;
+  background-image: url('./assets/img/cielo.jpg') ;
 
   background-position: top center;
   background-size: cover;
@@ -270,8 +282,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   -webkit-text-stroke: 0.8px rgb(228, 129, 37);
 }
 .banner p {
-  background: linear-gradient(90.21deg, rgba(99, 54, 170, 0.329) -5.91%, rgba(73, 47, 189, 0.315) 111.58%);
-border-radius: 20px;
+ 
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
@@ -378,14 +389,19 @@ border-radius: 20px;
 .skill {
   padding: 50px 0 50px 0;
   position: relative;
-
+  background-image: url("../src/assets/img/estrellas.jpg");
 }
-.skill-bx {
-background-color: #121212;
+.react-icons{
+  font-size: 70px;
+}
+.skill-box {
+
+
   text-align: center;
   border-radius: 20px;
   padding: 60px 60px;
   margin-top: 10px;
+  border: none;
 }
 .skill h2 {
 	font-size: 45px;
@@ -415,9 +431,28 @@ background-color: #121212;
   width: 50%;
   z-index: -4;
 }
+.skill-grid{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 30px;
+}
+@media (max-width: 1024px) {
+  .skill-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 @media (max-width: 767px) {
+  .skill-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .react-icons{
+    font-size: 50px;
+  }
   .skill p{
    text-align: left;
+  }
+  .skill h2{
+    font-size: 40px;
   }
 }
 
@@ -442,7 +477,7 @@ background-color: #121212;
   width: 56%;
 }
 .project .nav.nav-pills {
-  width: 72%;
+  width: 75%;
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
@@ -548,15 +583,16 @@ background-color: #121212;
 }
 @media (max-width: 767px) {
   .project p{
-   text-align: left;
+   text-align: start;
   }
   .project h2{
-    text-align: left;
+    font-size: 40px;
+    text-align: center;
   }
 }
 /************ contact Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #3664aa -5.91%, #3f19eb 111.58%);
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
   padding: 60px 0 200px 0;
 }
  #contacto-img {
@@ -633,6 +669,10 @@ background-color: #121212;
   width: 200px;
   height: 200px;
   margin-left: 20%;
+  }
+  .contact h2{
+    font-size: 40px;
+    text-align: center;
   }
  
 }

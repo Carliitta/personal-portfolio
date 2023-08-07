@@ -30,7 +30,7 @@ export const Projects = () => {
       Links: [
         {
           type: "deploy",
-          url: "https://inmolandia.netlify.app/",
+          url: "https://drive.google.com/file/d/1ZPHR-Q-j45mgCLzLlXayMBQrwwExWD0j/view?usp=drive_link",
           code: "https://github.com/Carliitta/inmobiliaria",
         },
       ],
@@ -42,12 +42,11 @@ export const Projects = () => {
       Links: [
         {
           type: "deploy",
-          url: "https://countries-pi-web.netlify.app/",
+          url: "https://drive.google.com/file/d/1JLkB2FjMLvlTXCtFPjoIvDZkZ3JBawes/view?usp=drive_link",
           code: "https://github.com/Carliitta/PI-countries2022",
         },
       ],
     },
-   
    
   ];
 

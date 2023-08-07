@@ -1,6 +1,7 @@
 import { Col } from "react-bootstrap";
 import { GoCode } from "react-icons/go";
 import { FiExternalLink } from "react-icons/fi";
+import {GoVideo} from 'react-icons/go'
 export const ProjectCard = ({ title, description, imgUrl,Links }) => {
   return (
     <Col size={12} sm={6} md={4}>
@@ -14,7 +15,7 @@ export const ProjectCard = ({ title, description, imgUrl,Links }) => {
       {Links.map((link, index) => (
                 <a key={index} href={link.url} target="_blank">
                   <FiExternalLink
-                    title="deploy"
+                    title="deploy/demo"
                     style={{ fontSize: "30px", marginRight: "15px" }}
                   />
                 </a>
