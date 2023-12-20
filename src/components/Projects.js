@@ -1,7 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/phoneZone.png";
-import projImg2 from "../assets/img/countries.png";
+import projImg2 from "../assets/img/todo.png";
 import projImg3 from "../assets/img/inmolandia.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -36,13 +36,13 @@ export const Projects = () => {
       ],
     },
     {
-      title: "Countries App",
-      description: "Proyecto Individual realizado en el bootcamp de Henry. FrontEnd: React-Redux-Javascript-CSS. Backend: Node-Express-PostgreSQL",
+      title: "Lista de tareas",
+      description: "Una aplicación de lista de tareas desarrollada en TypeScript y React, con persistencia de datos utilizando LocalStorage. Gestiona tus quehaceres de manera eficiente con esta aplicación moderna y fácil de usar.",
       imgUrl: projImg2,
       Links: [
         {
           type: "deploy",
-          url: "https://drive.google.com/file/d/1JLkB2FjMLvlTXCtFPjoIvDZkZ3JBawes/view?usp=drive_link",
+          url: "https://lista-quehaceres-typescript.netlify.app/",
           code: "https://github.com/Carliitta/PI-countries2022",
         },
       ],
