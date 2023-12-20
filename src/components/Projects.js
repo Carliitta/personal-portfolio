@@ -1,6 +1,6 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/phoneZone.png";
+import projImg1 from "../assets/img/chat.png";
 import projImg2 from "../assets/img/todo.png";
 import projImg3 from "../assets/img/inmolandia.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -12,14 +12,14 @@ export const Projects = () => {
   const projects = [
 
     {
-      title: "PhoneZone",
-      description: "Ecommerce de Celulares realizado en equipo. FrontEnd: React-Redux-Javascript-Tailwind. Backend: Node-Express-PostgreSQL",
+      title: "Chat react",
+      description: "Mi chat es una aplicación de mensajería en tiempo real que permite a los usuarios comunicarse instantáneamente a través de una interfaz de usuario moderna. Tecnologias:React.js-Bootstrap-express-node.js-socket.io",
       imgUrl: projImg1,
       Links: [
         {
           type: "deploy",
-          url: "https://front-phone-zone.vercel.app/",
-          code: "https://github.com/jooseariias/Mobil-Store",
+          url: "https://chatear.netlify.app/",
+          code: "https://github.com/Carliitta/React-socket-chat.git",
         },
       ],
     },
@@ -43,7 +43,7 @@ export const Projects = () => {
         {
           type: "deploy",
           url: "https://lista-quehaceres-typescript.netlify.app/",
-          code: "https://github.com/Carliitta/PI-countries2022",
+          code: "https://github.com/Carliitta/taks-app-typeScript.git",
         },
       ],
     },
